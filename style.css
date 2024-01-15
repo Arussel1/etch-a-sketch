@@ -1,6 +1,8 @@
 body {
     height: 100vh;
     margin: 0;
+    background-image: url('tile.jpeg');
+    z-index:0;
   }
   .container {
     width: 500px; 
@@ -10,8 +12,24 @@ body {
     display: flex;
     overflow-x: auto;
     flex-wrap: wrap;
+    z-index:2;
   }
 h1{
-    margin-left: 50px;
     width:200px;
+    margin:auto;
+    margin-top: 10px;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom:20px;
+}
+button{
+    margin-left: 15px;
+    min-width:160px;
+    height:40px;
+    font-size: 20px;
+    margin-top: 20px;
 }

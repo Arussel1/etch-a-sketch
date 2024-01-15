@@ -1,4 +1,10 @@
-
+let isMouseDown = false;
+document.addEventListener("mousedown", () =>{
+    isMouseDown = true;
+})
+document.addEventListener("mouseup", () =>{
+    isMouseDown = false;
+})
 for(let i = 0; i < 256;i++){
     let div = document.createElement('div');
     div.style.height = "31.25px";
@@ -11,8 +17,11 @@ for(let i = 0; i < 256;i++){
     div.className = "grid";
     document.querySelector('.container').appendChild(div);
 }
+
 for(let item of document.querySelectorAll(".grid")){
     item.addEventListener("mouseenter",function(event){
-        item.style.backgroundColor = "black";
+        if(isMouseDown == true){
+            item.style.backgroundColor = "black";
+        }
     })
 }
