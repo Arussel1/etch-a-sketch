@@ -1,3 +1,6 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
 body {
     height: 100vh;
     margin: 0;
@@ -7,7 +10,7 @@ body {
   .container {
     width: 500px; 
     height: 500px; 
-    background-color: #3498db; 
+    background-color: black; 
     margin: auto;
     display: flex;
     overflow-x: auto;
@@ -15,7 +18,7 @@ body {
     z-index:2;
   }
 h1{
-    width:200px;
+    text-align: center;
     margin:auto;
     margin-top: 10px;
 }
@@ -32,4 +35,22 @@ button{
     height:40px;
     font-size: 20px;
     margin-top: 20px;
+}
+.slider{
+    display: flex;
+    justify-content: center;
+}
+#myRange{
+    height:25px;
+    background: #d3d3d3;
+    width:200px;
+    margin-top: 10px;
+}
+#myRange:hover{
+    opacity: 1;
+}
+.value{
+    display: flex;
+    justify-content: center;
+    align-items:center;
 }
